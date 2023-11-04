@@ -36,17 +36,11 @@ const drawer = ref(lgAndUp.value)
     <slot name="navbar" />
   </VAppBar>
 
-  <VMain class="w-100">
+  <VMain class="w-100 h-100">
     <div class="pa-6">
       <slot />
     </div>
   </VMain>
-  <VFooter
-    app
-    style="background: transparent"
-  >
-    <slot name="footer" />
-  </VFooter>
 </template>
 
 <style lang="scss">
