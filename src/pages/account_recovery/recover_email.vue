@@ -28,7 +28,7 @@ const isButtonActive = buttonName => {
       >
         <div class="align-center">
           <h1
-            class="mb-3"
+            class="mb-7"
             style="color: #FFBF36;
             text-align: center; font-family: Bungee,serif;
             font-size: 90px;
@@ -37,38 +37,29 @@ const isButtonActive = buttonName => {
             line-height: 100px;
             letter-spacing: 18px;"
           >
-            WHAT DID YOU<br>
-            FORGOT?
+            Enter your email<br>
+            address
           </h1>
-
-          <VBtn
-            block=""
+          <h1
+            class="my-4"
+            style="color: #ffffff;
+            text-align: center;
+            font-weight: 400;"
+          >
+            Please enter your email when you used to sign up.
+          </h1>
+          <VTextField
             bg-color="#8C54D0"
-            color="#8C54D0"
-            :variant="isButtonActive('username') ? 'outlined' : 'flat'"
-            @click="setActiveButton('username')"
-          >
-            Username
-          </VBtn>
-          <VDivider
-            color="#FFFFFFFF"
-            class="ma-3"
+            color="white"
+            label="Email Address"
+            style="color: white; font-weight: 700;"
           />
-          <VBtn
-            block=""
-            bg-color="#FFBF36"
-            color="#FFBF36"
-            :variant="isButtonActive('password') ? 'outlined' : 'flat'"
-            @click="activeButton = !activeButton"
-          >
-            Password
-          </VBtn>
-          <VCardActions class="justify-center">
+          <VCardActions class="justify-center mt-7">
             <VBtn
-              default
-              color="#8C54D0"
+              variant="flat"
+              color="#FFBF36"
               rounded="lg"
-              @click="test = !test"
+              style="color: white"
             >
               Next
             </VBtn>

@@ -1,6 +1,7 @@
-<script>
+<script setup>
 import { ref } from 'vue'
 const test_show = ref(true)
+import logo from '@/assets/logo/logoicon.png'
 </script>
 
 <template>
@@ -29,10 +30,10 @@ const test_show = ref(true)
           >
             WELCOME!
           </h1>
-
           <VTextField
+            style="color: white"
             bg-color="#8C54D0"
-            color="#8C54D0"
+            color="white"
             label="Username"
           />
           <VDivider
@@ -40,25 +41,45 @@ const test_show = ref(true)
             class="ma-3"
           />
           <VTextField
+            style="color: white"
             bg-color="#FFBF36"
-            color="#FFBF36"
+            color="white"
             label="Password"
           />
           <VCardActions class="justify-center">
             <VBtn
-              default
+              class="ma-10"
+              variant="flat"
               color="#8C54D0"
               rounded="lg"
-              @click="test = !test"
+              style="color: white;"
             >
               Next
             </VBtn>
           </VCardActions>
-          <VCardActions class="justify-center">
-            <a
-              href="#"
-              style="color: white; text-decoration: underline; text-decoration-color: #FFBF36"
-            >Forgot your account?</a>
+          <VCardActions class="d-flex align-center justify-center">
+            <VBtn
+              variant="text"
+              color="#8C54D0"
+              style="color: white; text-decoration: underline; text-decoration-color: white; text-decoration-thickness: 3px"
+            >
+              Sign-up
+              <template #append>
+                <img
+                  style="height: 23px"
+                  :src="logo"
+                  alt="logo"
+                >
+              </template>
+            </VBtn>
+            <VBtn
+              variant="text"
+              color="#8C54D0"
+              style="color: white; text-decoration: underline; text-decoration-color: #FFBF36; text-decoration-thickness: 3px"
+              to="/account_recovery"
+            >
+              Forgot your account?
+            </VBtn>
           </VCardActions>
         </div>
       </VCol>

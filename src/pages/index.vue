@@ -31,6 +31,7 @@ const test_show = ref(true)
           </h1>
 
           <VTextField
+            style="color: white"
             bg-color="#8C54D0"
             color="#8C54D0"
             label="Username"
@@ -40,6 +41,7 @@ const test_show = ref(true)
             class="ma-3"
           />
           <VTextField
+            style="color: white"
             bg-color="#FFBF36"
             color="#FFBF36"
             label="Password"
