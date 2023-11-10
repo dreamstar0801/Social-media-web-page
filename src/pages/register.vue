@@ -1,18 +1,24 @@
 <template>
-    <div style="background-color: black; height: 100vh">
-        <div class="door">
-        <img src="../assets/door.png">
+  <div style="background-color: black; height: 100vh">
+    <div class="door">
+      <img src="../assets/door.png">
     </div>
     <form>
-        <div class="textbox">
-            <input type="email" placeholder="ENTER YOUR SCHOOL EMAIL">
-        </div>
-        <div class="verifybutton">
-            <button onclick="location.href='2.html'">VERIFY</button>
-        </div>
+      <div class="textbox">
+        <input
+          type="email"
+          placeholder="ENTER YOUR SCHOOL EMAIL"
+        >
+      </div>
+      <div class="verifybutton">
+        <button onclick="location.href='2.html'">
+          VERIFY
+        </button>
+      </div>
     </form>
-    </div>
+  </div>
 </template>
+
 <style scoped>
 input{
     width: 1007px;

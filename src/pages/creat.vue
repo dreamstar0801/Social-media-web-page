@@ -1,27 +1,49 @@
 <template>
-    <div style="background-color: black; height: 100vh">
-        <div style="line-height: 1200%;">
-            <h1 style="font-size: 100px;">CREATE YOUR <br> NEW ACCOUNT</h1>
+  <div style="background-color: black; height: 100vh">
+    <div style="line-height: 1200%;">
+      <h1 style="font-size: 100px;">
+        CREATE YOUR <br> NEW ACCOUNT
+      </h1>
     </div>
     <form>
-        <div class="idbox">
-            <input type="email" placeholder="Username" style="background-color: #8C54D0">
-            <button class='verifybutton'>Verify</button>
-        </div>
+      <div class="idbox justify-center">
+        <VTextField
+          style="color: white; width: 50%;"
+          bg-color="#8C54D0"
+          color="#8C54D0"
+          label="Username"
+        >
+          <template #append-inner>
+            <VBtn color="#8C54D0">
+              Test
+            </VBtn>
+          </template>
+        </VTextField>
+      </div>
+      <div class="pwbox">
+        <input
+          type="password"
+          placeholder="Password"
+          style="background-color: #ffbf36"
+        >
+      </div>
         
-        <div class="pwbox">
-            <input type="password" placeholder="Password" style="background-color: #ffbf36">
-        </div>
+      <h3 style="font-size: 40px;">
+        ※ Please include at least one UPPER case and
+      </h3> 
+      <h3 style="font-size: 40px;">
+        one Number in your password
+      </h3> 
         
-        <h3 style="font-size: 40px;">※ Please include at least one UPPER case and </h3> 
-        <h3 style="font-size: 40px;">one Number in your password</h3> 
-        
-        <div class="createbutton">
-            <button onclick="location.href='notyet.html'">Create</button>
-        </div>
+      <div class="createbutton">
+        <button onclick="location.href='notyet.html'">
+          Create
+        </button>
+      </div>
     </form>
-    </div>
+  </div>
 </template>
+
 <style scoped>
 h1{
     text-align: center;
