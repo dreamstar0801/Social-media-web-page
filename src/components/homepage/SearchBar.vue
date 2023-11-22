@@ -3,10 +3,11 @@
     cols="10"
   >
     <VTextField
-      style="color: white"
-      bg-color="#FFBF36"
-      color="white"
+      variant="outlined"
+      style="color: #FFBF36"
+      color="#FFBF36"
       label="Search"
+      append-inner-icon="mdi-magnify"
     />
   </VCol>
   <VCol

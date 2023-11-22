@@ -69,3 +69,8 @@ const isButtonActive = buttonName => {
     </VRow>
   </VCol>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

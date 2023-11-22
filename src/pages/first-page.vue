@@ -1,30 +1,47 @@
 <template>
   <div>
     <head>
-      <link rel="stylesheet" href="first-page.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        rel="stylesheet"
+        href="first-page.css"
+      >
+      <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+      >
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+      >
       <link
         href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
         rel="stylesheet"
-      />
+      >
     </head>
     <body>
       <div class="main-title">
-        <h1 class="title">JOIN US <font color="#8C54D0">NOW !</font></h1>
+        <h1 class="title">
+          JOIN US <Font color="#8C54D0">
+            NOW !
+          </Font>
+        </h1>
       </div>
       <div class="block">
         <div class="main">
           <div class="door-picture">
-            <v-img :src="require('../assets/door-picture.png')" contain />
+            <VImg
+              :src="require('../assets/door-picture.png')"
+              contain
+            />
           </div>
           <div class="main-text">
             <div class="text">
-              WE ARE HERE<br />
+              WE ARE HERE<br>
               FOR YOU
             </div>
             <div class="btn-box">
-              <v-btn
+              <VBtn
                 width="15vw"
                 height="5vw"
                 color="#FFBF36"
@@ -39,18 +56,19 @@
                     1px -1px 0 #000, 0px 1px 0 #000, 0-1px 0 #000, -1px 0 0 #000,
                     1px 0 0 #000;
                 "
-                >SIGN-UP</v-btn
               >
+                SIGN-UP
+              </VBtn>
             </div>
             <div class="pic-box">
-              <v-img
+              <VImg
                 :src="require('../assets/sign-up.png')"
                 contain
                 style="height: 8vw; text-align: left"
               />
             </div>
             <div class="btn-box">
-              <v-btn
+              <VBtn
                 width="15vw"
                 height="5vw"
                 color="#8C54D0"
@@ -65,11 +83,12 @@
                     1px -1px 0 #000, 0px 1px 0 #000, 0-1px 0 #000, -1px 0 0 #000,
                     1px 0 0 #000;
                 "
-                >LOG-IN</v-btn
               >
+                LOG-IN
+              </VBtn>
             </div>
             <div class="pic-box">
-              <v-img
+              <VImg
                 :src="require('../assets/log-in.png')"
                 contain
                 style="height: 8vw; text-align: left"
@@ -84,7 +103,7 @@
 
 <script>
 export default {
-  name: "first-page",
+  name: "FirstPage",
 
   data: () => ({
     ecosystem: [
@@ -134,7 +153,7 @@ export default {
       },
     ],
   }),
-};
+}
 </script>
 
 <style scoped>
@@ -231,3 +250,8 @@ body {
   text-align: left;
 }
 </style>
+
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

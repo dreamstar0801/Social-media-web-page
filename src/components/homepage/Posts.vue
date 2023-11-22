@@ -27,6 +27,7 @@
           Helpful
         </span>
         <VIcon
+          class='ml-3'
           icon="mdi-comment-text-multiple"
           color="#8C54D0"
         />

@@ -74,3 +74,8 @@ img{
     transform:translate(0,30px)
 }
 </style>
+
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

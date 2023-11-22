@@ -115,3 +115,8 @@ button{
     text-align: center;
 }
 </style>
+
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

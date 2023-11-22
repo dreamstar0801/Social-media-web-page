@@ -3,9 +3,10 @@ import { ref , defineComponent } from 'vue'
 import SeachBar from '@/components/homepage/SearchBar.vue'
 import Posts from '@/components/homepage/Posts.vue'
 import ShortCutBtns from '@/components/homepage/ShortCutBtns.vue'
+import Blank from '@/layouts/blank.vue'
 
 export default defineComponent({
-  components: { ShortCutBtns, Posts, SeachBar },
+  components: { Blank, ShortCutBtns, Posts, SeachBar },
 })
 
 const test_show = ref(true)
@@ -28,7 +29,10 @@ const test_show = ref(true)
           />
           <!-- add divider -->
         </VCol>
-        <Posts />
+        <Posts
+          v-for="n in 4"
+          :key="n"
+        />
       </VCol>
       <VCol cols="2">
         <ShortCutBtns />
@@ -37,3 +41,7 @@ const test_show = ref(true)
   </VCol>
 </template>
 
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

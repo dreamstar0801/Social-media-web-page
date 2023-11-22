@@ -86,3 +86,8 @@ import logo from '@/assets/logo/logoicon.png'
     </VRow>
   </VCol>
 </template>
+
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

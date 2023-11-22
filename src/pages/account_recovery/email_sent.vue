@@ -58,3 +58,7 @@
 <script setup>
 </script>
 
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>

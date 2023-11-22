@@ -1,7 +1,33 @@
+<script setup>
+import SeachBar from '@/components/homepage/SearchBar.vue'
+import ShortCutBtns from '@/components/homepage/ShortCutBtns.vue'
+</script>
 
 <template>
   <div class="layout-page-content">
-    <RouterView />
+    <VCol
+      cols="12"
+      style="background-color: black; height: 100vh"
+    >
+      <VRow
+        class="de-flex justify-center align-center"
+      >
+        <SeachBar />
+        <VCol cols="10">
+          <VCol cols="12">
+            <VIcon
+              icon="mdi-medal"
+              color="#FFBF36"
+            />
+            <!-- add divider -->
+          </VCol>
+          <RouterView />
+        </VCol>
+        <VCol cols="2">
+          <ShortCutBtns />
+        </VCol>
+      </VRow>
+    </VCol>
   </div>
 </template>
 
