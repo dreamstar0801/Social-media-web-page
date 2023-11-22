@@ -231,3 +231,7 @@ body {
   text-align: left;
 }
 </style>
+<route lang="yaml">
+meta:
+  layout: _blank
+</route>
