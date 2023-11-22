@@ -16,7 +16,7 @@
       <div class="block">
         <div class="main">
           <div class="door-picture">
-            <v-img :src="require('../assets/door-picture.png')" contain />
+            <v-img :src="require('../assets/door.png')" contain />
           </div>
           <div class="main-text">
             <div class="text">
