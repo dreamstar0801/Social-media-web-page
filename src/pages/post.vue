@@ -1,20 +1,73 @@
+<script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const postId = route.params.postId
+
+const data = {
+  title:"Post title",
+  author:"me",
+  date:"now",
+  content:"some content",
+  location:"somewhere",
+  comments:[
+    {
+      id:1,
+      username:"somebody",
+      Forum:"some forum",
+      date:"some time",
+      replies:[],
+    },
+    {
+      id:2,
+      username:"somebody",
+      Forum:"some forum",
+      date:"some time",
+      replies:[],
+    },
+    {
+      id:3,
+      username:"somebody",
+      Forum:"some forum",
+      date:"some time",
+      replies:[],
+    },
+    {
+      id:4,
+      username:"somebody",
+      Forum:"some forum",
+      date:"some time",
+      replies:[],
+    },
+    {
+      id:5,
+      username:"somebody",
+      Forum:"some forum",
+      date:"some time",
+      replies:[],
+    },
+
+  ],
+}
+</script>
+
 <template>
   <VCard style="background-color: black; border-color: #8C54D0; border-width: 1px">
     <VCardTitle class="d-flex justify-space-between">
       <span>
-        Post Title
+        {{data.title}}
       </span>
       <span>
-        Date/Time
+        {{ data.date }}
       </span>
     </VCardTitle>
     <VDivider />
     <VCardSubtitle class="d-flex justify-space-between">
       <span>
-        Author
+        {{data.author}}
       </span>
       <span>
-        Location
+        {{data.location}}
       </span>
     </VCardSubtitle>
     <VCardActions class="d-flex justify-space-between">
@@ -25,14 +78,6 @@
         />
         <span style="color: #FFBF36">
           Helpful
-        </span>
-        <VIcon
-          class="ml-3"
-          icon="mdi-comment-text-multiple"
-          color="#8C54D0"
-        />
-        <span style="color: #8C54D0">
-          Comment
         </span>
       </div>
       <div>
@@ -60,13 +105,18 @@
         </VBtn>
       </div>
     </VCardActions>
+    <VCardActions>
+      <VCol cols='12'>
+        <VBtn block>
+          Reply
+        </VBtn>
+      </VCol>
+      <VCol cols='12'>
+
+      </VCol>
+    </VCardActions>
   </VCard>
 </template>
-
-<script setup>
-const shareclicked = ref(false)
-const saveclicked = ref(false)
-</script>
 
 <style scoped>
 

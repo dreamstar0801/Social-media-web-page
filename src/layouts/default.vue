@@ -14,13 +14,6 @@ import ShortCutBtns from '@/components/homepage/ShortCutBtns.vue'
       >
         <SeachBar />
         <VCol cols="10">
-          <VCol cols="12">
-            <VIcon
-              icon="mdi-medal"
-              color="#FFBF36"
-            />
-            <!-- add divider -->
-          </VCol>
           <RouterView />
         </VCol>
         <VCol cols="2">

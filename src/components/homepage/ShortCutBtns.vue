@@ -48,8 +48,8 @@ const buttons = [
     text:"Professor",
   },
   {
-    icon:"mdi-calendar-outline",
-    text:"Schedule",
+    icon:"mdi-cart-outline",
+    text:"Market",
   },
 ]
 </script>
