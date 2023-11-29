@@ -27,7 +27,7 @@
           Helpful
         </span>
         <VIcon
-          class='ml-3'
+          class="ml-3"
           icon="mdi-comment-text-multiple"
           color="#8C54D0"
         />
@@ -36,23 +36,36 @@
         </span>
       </div>
       <div>
-        <VIcon
-          icon="mdi-share"
-          color="#FFBF36"
-        />
-        <VIcon
-          icon="mdi-bookmark-outline"
-          color="#8C54D0"
-        />
+        <VBtn
+          height="40"
+          variant="text"
+          width="40"
+          @click="shareclicked!==shareclicked"
+        >
+          <VIcon
+            icon="mdi-share"
+            color="#FFBF36"
+          />
+        </VBtn>
+        <VBtn
+          height="40"
+          variant="text"
+          width="40"
+          @click="saveclicked!=saveclicked"
+        >
+          <VIcon
+            :icon="saveclicked?'mdi-bookmark-outline':'mdi-bookmark'"
+            color="#8C54D0"
+          />
+        </VBtn>
       </div>
     </VCardActions>
   </VCard>
 </template>
 
-<script>
-export default {
-  name: 'Posts',
-}
+<script setup>
+const shareclicked = ref(false)
+const saveclicked = ref(false)
 </script>
 
 <style scoped>
