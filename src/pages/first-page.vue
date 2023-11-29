@@ -233,5 +233,5 @@ body {
 </style>
 <route lang="yaml">
 meta:
-  layout: _blank
+  layout: blank
 </route>

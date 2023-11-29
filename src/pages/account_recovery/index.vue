@@ -81,5 +81,5 @@ const isButtonActive = buttonName => {
 
 <route lang="yaml">
 meta:
-  layout: _blank
+  layout: blank
 </route>

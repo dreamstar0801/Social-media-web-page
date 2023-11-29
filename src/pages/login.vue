@@ -89,5 +89,5 @@ import logo from '@/assets/logo/logoicon.png'
 
 <route lang="yaml">
 meta:
-  layout: _blank
+  layout: blank
 </route>
