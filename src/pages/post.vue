@@ -54,6 +54,7 @@ const data = {
 <template>
   <VCard style="background-color: black; border-color: #8C54D0; border-width: 1px">
     <VCardTitle class="d-flex justify-space-between">
+<div>{{postId}}</div>
       <span>
         {{data.title}}
       </span>
