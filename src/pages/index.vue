@@ -43,5 +43,5 @@ const test_show = ref(true)
 
 <route lang="yaml">
 meta:
-  layout: blank
+  layout: _blank
 </route>

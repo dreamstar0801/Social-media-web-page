@@ -23,10 +23,13 @@
         color="#FFBF36"
       />
     </VBtn>
-  </VCol>
-  <VCol
-    cols="1"
-  >
+    <VBtn
+      block
+      variant="outlined"
+      color="#FFBF36"
+    >
+      <VImg :src="chatpic" />           <!-- Image not showing -->
+    </VBtn>
     <VBtn
       block
       variant="outlined"
