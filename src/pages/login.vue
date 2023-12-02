@@ -20,7 +20,7 @@ import logo from '@/assets/logo/logoicon.png'
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white;
+            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white; text-decoration;
             text-align: center; font-family: Bungee,serif;
             font-size: 100px;
             font-style: normal;
@@ -57,29 +57,34 @@ import logo from '@/assets/logo/logoicon.png'
               Next
             </VBtn>
           </VCardActions>
-          <VCardActions class="d-flex align-center justify-center">
-            <VBtn
-              variant="text"
-              color="#8C54D0"
-              style="color: white; text-decoration: underline; text-decoration-color: white; text-decoration-thickness: 3px"
-            >
-              Sign-up
-              <template #append>
-                <img
-                  style="height: 23px"
-                  :src="logo"
-                  alt="logo"
+          <VCardActions>
+            <VRow>
+              <VCol
+                cols="12"
+                class="d-flex align-center justify-center"
+              >
+                <VBtn
+                  variant="text"
+                  color="#8C54D0"
+                  style="color: #FFBF36;"
                 >
-              </template>
-            </VBtn>
-            <VBtn
-              variant="text"
-              color="#8C54D0"
-              style="color: white; text-decoration: underline; text-decoration-color: #FFBF36; text-decoration-thickness: 3px"
-              to="/account_recovery"
-            >
-              Forgot your account?
-            </VBtn>
+                  Sign-up
+                </VBtn>
+              </VCol>
+              <VCol
+                cols="12"
+                class="d-flex align-center justify-center"
+              >
+                <VBtn
+                  variant="text"
+                  color="#8C54D0"
+                  style="color: white"
+                  to="/account_recovery"
+                >
+                  Forgot your account?
+                </VBtn>
+              </VCol>
+            </VRow>
           </VCardActions>
         </div>
       </VCol>

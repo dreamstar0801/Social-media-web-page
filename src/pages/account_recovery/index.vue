@@ -4,12 +4,14 @@ import { ref } from 'vue'
 // This ref will keep track of the active button
 const activeButton = ref(false)
 
-const setActiveButton = buttonName => {
-  activeButton.value = activeButton.value === buttonName ? '' : buttonName
-}
+const init = ref(false)
+const buttonVariant = computed(() => {
+  return activeButton.value || !init.value ? 'outlined' : `flat`
+})
 
-const isButtonActive = buttonName => {
-  return activeButton.value === buttonName
+const click = () =>{
+  activeButton.value = !activeButton.value
+  init.value = true
 }
 </script>
 
@@ -46,7 +48,7 @@ const isButtonActive = buttonName => {
             bg-color="#8C54D0"
             color="#8C54D0"
             :variant="activeButton ? 'flat' : 'outlined'"
-            @click="activeButton = !activeButton"
+            @click="click"
           >
             Username
           </VBtn>
@@ -55,25 +57,15 @@ const isButtonActive = buttonName => {
             class="ma-3"
           />
           <VBtn
+            to="/account_recovery/email_sent"
             block=""
             bg-color="#FFBF36"
             color="#FFBF36"
-            :variant="activeButton ? 'outlined' : 'flat'"
-            @click="activeButton = !activeButton"
+            :variant="buttonVariant"
+            @click="click"
           >
             Password
           </VBtn>
-          <VCardActions class="justify-center mt-7">
-            <VBtn
-              default
-              color="#8C54D0"
-              rounded="lg"
-              @click="test = !test"
-              onclick="location.href='/account_recovery/recover_email'"
-            >
-              Next
-            </VBtn>
-          </VCardActions>
         </div>
       </VCol>
     </VRow>
