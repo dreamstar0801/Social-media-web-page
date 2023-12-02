@@ -69,6 +69,7 @@ const isButtonActive = buttonName => {
               color="#8C54D0"
               rounded="lg"
               @click="test = !test"
+              onclick="location.href='/account_recovery/recover_email'"
             >
               Next
             </VBtn>
