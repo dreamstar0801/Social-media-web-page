@@ -1,9 +1,3 @@
-<script setup>
-import { ref } from 'vue'
-const test_show = ref(true)
-import logo from '@/assets/logo/logoicon.png'
-</script>
-
 <template>
   <VCol
     cols="12"
@@ -47,43 +41,31 @@ import logo from '@/assets/logo/logoicon.png'
             label="Password"
           />
           <VCardActions class="justify-center">
-            <VBtn
-              class="ma-10"
-              variant="flat"
-              color="#8C54D0"
-              rounded="lg"
-              style="color: white;"
-            >
-              Next
-            </VBtn>
-          </VCardActions>
-          <VCardActions>
             <VRow>
               <VCol
                 cols="12"
-                class="d-flex align-center justify-center"
+                class="justify-center"
               >
                 <VBtn
-                  to="/register"
-                  variant="text"
+                  class="ma-10"
+                  variant="flat"
                   color="#8C54D0"
-                  style="color: #FFBF36;"
+                  rounded="lg"
+                  style="color: white;"
                 >
-                  Sign-up
+                  Create
                 </VBtn>
               </VCol>
               <VCol
                 cols="12"
-                class="d-flex align-center justify-center"
+                class="justify-center"
               >
-                <VBtn
-                  variant="text"
-                  color="#8C54D0"
-                  style="color: white"
-                  to="/account_recovery"
-                >
-                  Forgot your account?
-                </VBtn>
+                <h3 style="font-size: 40px;">
+                  ※ Please include at least one UPPER case and
+                </h3>
+                <h3 style="font-size: 40px;">
+                  one Number in your password
+                </h3>
               </VCol>
             </VRow>
           </VCardActions>
@@ -92,6 +74,43 @@ import logo from '@/assets/logo/logoicon.png'
     </VRow>
   </VCol>
 </template>
+
+<script setup lang='ts'>
+</script>
+
+<style scoped>
+h1{
+  text-align: center;
+  color: #fbd990;
+  font-family: bungee;
+  letter-spacing: 0.1em;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-family: bungee;
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+  transform:translate(0,-100px);
+}
+
+h3{
+  text-align: center;
+  color: #ff7676;
+  font-family: cabin;
+}
+
+.idbox{
+  text-align: center;
+  transform:translate(0,-100px);
+}
+
+.verifybutton{
+  border-radius: 20px;
+  width: 170px;
+  height: 66px;
+}
+</style>
 
 <route lang="yaml">
 meta:
