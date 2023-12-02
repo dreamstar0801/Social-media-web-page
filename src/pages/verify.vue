@@ -21,12 +21,12 @@
 
 <style scoped>
 input{
-    width: 1007px;
-    height: 128px;
+    width: 800px;
+    height: 70px;
     background-color: #ffbf36;
     border: none;
     color:white;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     border-radius: 10px;
     font-family: bungee;
@@ -41,11 +41,11 @@ input::placeholder{
 }
 
 button{
-    width: 282px;
-    height: 89px;
+    width: 150px;
+    height: 50px;
     background-color: #8C54D0;
     color:white;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 1;
     font-weight: bold;
     font-family: bungee;
@@ -71,7 +71,7 @@ img{
 
 .verifybutton{
     text-align: center;
-    transform:translate(0,30px)
+    transform:translate(0,50px)
 }
 </style>
 
