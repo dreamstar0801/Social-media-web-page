@@ -54,9 +54,9 @@ const data = {
 <template>
   <VCard style="background-color: black; border-color: #8C54D0; border-width: 1px">
     <VCardTitle class="d-flex justify-space-between">
-<div>{{postId}}</div>
+      <div>{{ postId }}</div>
       <span>
-        {{data.title}}
+        {{ data.title }}
       </span>
       <span>
         {{ data.date }}
@@ -65,10 +65,10 @@ const data = {
     <VDivider />
     <VCardSubtitle class="d-flex justify-space-between">
       <span>
-        {{data.author}}
+        {{ data.author }}
       </span>
       <span>
-        {{data.location}}
+        {{ data.location }}
       </span>
     </VCardSubtitle>
     <VCardActions class="d-flex justify-space-between">
@@ -107,14 +107,18 @@ const data = {
       </div>
     </VCardActions>
     <VCardActions>
-      <VCol cols='12'>
-        <VBtn block>
+      <VCol cols="12">
+        <VBtn
+          block
+          class="justify-start"
+          prepend-icon="mdi-arrow-right-top"
+          color="#FFBF36"
+          style="border-width: 1px; border-color: #8C54D0"
+        >
           Reply
         </VBtn>
       </VCol>
-      <VCol cols='12'>
-
-      </VCol>
+      <VCol cols="12" />
     </VCardActions>
   </VCard>
 </template>

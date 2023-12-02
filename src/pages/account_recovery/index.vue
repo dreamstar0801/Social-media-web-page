@@ -38,15 +38,15 @@ const isButtonActive = buttonName => {
             letter-spacing: 18px;"
           >
             WHAT DID YOU<br>
-            FORGOT?
+            FORGET?
           </h1>
 
           <VBtn
             block=""
             bg-color="#8C54D0"
             color="#8C54D0"
-            :variant="isButtonActive('username') ? 'outlined' : 'flat'"
-            @click="setActiveButton('username')"
+            :variant="activeButton ? 'flat' : 'outlined'"
+            @click="activeButton = !activeButton"
           >
             Username
           </VBtn>
@@ -58,7 +58,7 @@ const isButtonActive = buttonName => {
             block=""
             bg-color="#FFBF36"
             color="#FFBF36"
-            :variant="isButtonActive('password') ? 'outlined' : 'flat'"
+            :variant="activeButton ? 'outlined' : 'flat'"
             @click="activeButton = !activeButton"
           >
             Password
