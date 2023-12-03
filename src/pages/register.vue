@@ -14,15 +14,15 @@
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white; text-decoration;
+            style="color: #FFBF36; 
             text-align: center; font-family: Bungee,serif;
-            font-size: 100px;
+            font-size: 50px;
             font-style: normal;
-            font-weight: 400;
             line-height: normal;
-            letter-spacing: 24px;"
+            letter-spacing: 18px;
+            font-weight: 500;"
           >
-            WELCOME!
+            <b>CREATE YOUR NEW ACCOUNT!</b>
           </h1>
           <VTextField
             style="color: white"
@@ -46,26 +46,31 @@
                 cols="12"
                 class="justify-center"
               >
-                <VBtn
-                  class="ma-10"
-                  variant="flat"
-                  color="#8C54D0"
-                  rounded="lg"
-                  style="color: white;"
+                <h3 
+                  style="font-size: 20px;
+                  letter-spacing: 4px;"
                 >
-                  Create
-                </VBtn>
+                  <br>※ Please include at least one UPPER case and <br>
+                  one Number in your password
+                </h3>
               </VCol>
+              
               <VCol
                 cols="12"
                 class="justify-center"
               >
-                <h3 style="font-size: 40px;">
-                  ※ Please include at least one UPPER case and
-                </h3>
-                <h3 style="font-size: 40px;">
-                  one Number in your password
-                </h3>
+                <VCardActions class="justify-center">
+                  <VBtn
+                    to="/verify"
+                    class="ma-10"
+                    variant="flat"
+                    color="#8C54D0"
+                    rounded="lg"
+                    style="color: white;"
+                  >
+                    Next  
+                  </VBtn>
+                </VCardActions>
               </VCol>
             </VRow>
           </VCardActions>
@@ -109,6 +114,10 @@ h3{
   border-radius: 20px;
   width: 170px;
   height: 66px;
+}
+
+.createbutton{
+  text-align: center;
 }
 </style>
 

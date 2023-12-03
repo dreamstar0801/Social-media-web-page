@@ -65,6 +65,8 @@ const isButtonActive = buttonName => {
             We will send you a link to reset your password through your email.
           </h1>
 
+        
+
           <VCardActions class="justify-center mt-7">
             <VBtn
               variant="flat"
