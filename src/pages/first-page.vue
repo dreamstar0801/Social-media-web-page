@@ -15,7 +15,7 @@
         crossorigin
       >
       <link
-        href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
         rel="stylesheet"
       >
     </head>
@@ -35,12 +35,11 @@
               contain
             />
           </div>
-          <div class="main-text">
-            <div class="text">
-              WE ARE HERE<br>
-              FOR YOU
-            </div>
-            <div class="btn-box">
+          <VRow class="d-flex justify-center">
+            <VCol
+              class="pt-14"
+              cols="12"
+            >
               <VBtn
                 to="/register"
                 width="15vw"
@@ -60,15 +59,8 @@
               >
                 SIGN-UP
               </VBtn>
-            </div>
-            <div class="pic-box">
-              <VImg
-                src="'@/assets/sign-up.png'"
-                contain
-                style="height: 8vw; text-align: left"
-              />
-            </div>
-            <div class="btn-box">
+            </VCol>
+            <VCol cols="12">
               <VBtn
                 to="/login"
                 width="15vw"
@@ -88,15 +80,8 @@
               >
                 LOG-IN
               </VBtn>
-            </div>
-            <div class="pic-box">
-              <VImg
-                src=""
-                contain
-                style="height: 8vw; text-align: left"
-              />
-            </div>
-          </div>
+            </VCol>
+          </VRow>
         </div>
       </div>
     </body>
@@ -140,15 +125,13 @@ div.main-title {
 }
 
 .title {
-  letter-spacing: 0.8vw;
+  letter-spacing: 24px;
   height: 6vw;
   text-align: center;
-  font-family: bungee;
+  font-family: Anton;
   font-size: 5vw;
   color: #ffbf36;
   display: inline-block;
-  border-bottom: solid 0.8vw;
-  border-color: #ffffff;
   margin: 10vh 0 2vw 0;
   text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, -3px 3px 0 #000,
     3px -3px 0 #000, 0px 3px 0 #000, 0 -3px 0 #000, -3px 0 0 #000, 3px 0 0 #000;
@@ -182,17 +165,9 @@ body {
     opacity: 1;
   }
 }
-
 .sign-in {
   font-family: bungee;
   color: #ffffff;
-}
-
-.btn-box {
-  margin: 1vw 0 2vw 0;
-  float: left;
-  width: 50%;
-  text-align: right;
 }
 
 .pic-box {
