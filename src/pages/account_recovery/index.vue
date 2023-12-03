@@ -44,7 +44,7 @@ const click = () =>{
           </h1>
 
           <VBtn
-            to="/account_recovery/recover_email"
+            to="/account_recovery/recover_username"
             block=""
             bg-color="#8C54D0"
             color="#8C54D0"
@@ -58,7 +58,7 @@ const click = () =>{
             class="ma-3"
           />
           <VBtn
-            to="/account_recovery/recover_email"
+            to="/account_recovery/recover_password"
             block=""
             bg-color="#FFBF36"
             color="#FFBF36"

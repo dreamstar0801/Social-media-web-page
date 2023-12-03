@@ -14,15 +14,15 @@
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36;
+            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white; text-decoration;
             text-align: center; font-family: Bungee,serif;
             font-size: 100px;
             font-style: normal;
             font-weight: 400;
-            line-height: 90px;
-            letter-spacing: 10px;"
+            line-height: normal;
+            letter-spacing: 24px;"
           >
-            create your new account
+            WELCOME!
           </h1>
           <VTextField
             style="color: white"
@@ -46,17 +46,6 @@
                 cols="12"
                 class="justify-center"
               >
-                <h3 style="font-size: 40px;">
-                  ※ Please include at least one UPPER case and
-                </h3>
-                <h3 style="font-size: 40px;">
-                  one Number in your password
-                </h3>
-              </VCol>
-              <VCol
-                cols="12"
-                class="d-flex justify-center"
-              >
                 <VBtn
                   class="ma-10"
                   variant="flat"
@@ -66,6 +55,17 @@
                 >
                   Create
                 </VBtn>
+              </VCol>
+              <VCol
+                cols="12"
+                class="justify-center"
+              >
+                <h3 style="font-size: 40px;">
+                  ※ Please include at least one UPPER case and
+                </h3>
+                <h3 style="font-size: 40px;">
+                  one Number in your password
+                </h3>
               </VCol>
             </VRow>
           </VCardActions>
