@@ -19,10 +19,10 @@
             font-size: 100px;
             font-style: normal;
             font-weight: 400;
-            line-height: normal;
+            line-height: 90px;
             letter-spacing: 24px;"
           >
-            WELCOME!
+            Create your New Account
           </h1>
           <VTextField
             style="color: white"
