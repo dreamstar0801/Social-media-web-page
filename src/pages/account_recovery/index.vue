@@ -58,7 +58,7 @@ const click = () =>{
             class="ma-3"
           />
           <VBtn
-            to="/account_recovery/recover_email"
+            to="/account_recovery/recover_email_pw"
             block=""
             bg-color="#FFBF36"
             color="#FFBF36"
