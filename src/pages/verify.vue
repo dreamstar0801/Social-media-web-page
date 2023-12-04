@@ -11,7 +11,9 @@
         >
       </div>
       <div class="verifybutton">
-        <button onclick="location.href='2.html'">
+        <button
+          onclick="location.href='/account_recovery/email_sent'"
+        >
           VERIFY
         </button>
       </div>
