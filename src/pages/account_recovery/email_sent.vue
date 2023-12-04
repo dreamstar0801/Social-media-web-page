@@ -46,7 +46,7 @@
               color="#8C54D0"
               rounded="lg"
             >
-              Next
+              Resend
             </VBtn>
           </VCardActions>
         </div>

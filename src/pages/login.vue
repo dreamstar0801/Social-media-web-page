@@ -20,11 +20,11 @@ import logo from '@/assets/logo/logoicon.png'
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white; text-decoration;
+            style="color: #FFBF36;
             text-align: center; font-family: Bungee,serif;
             font-size: 100px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 400 ;
             line-height: normal;
             letter-spacing: 24px;"
           >
@@ -46,9 +46,11 @@ import logo from '@/assets/logo/logoicon.png'
             color="white"
             label="Password"
           />
+
+          <br> 
           <VCardActions class="justify-center">
             <VBtn
-              class="ma-10"
+              onclick="location.href='/'"
               variant="flat"
               color="#8C54D0"
               rounded="lg"

@@ -14,15 +14,15 @@
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36; text-decoration: underline; text-decoration-color: white; text-decoration;
-            text-align: center; font-family: Bungee,serif;
+            style="color: #FFBF36;
+            text-align: center; font-family: bungee ,serif;
             font-size: 100px;
             font-style: normal;
             font-weight: 400;
             line-height: 90px;
             letter-spacing: 24px;"
           >
-            Create your New Account
+            Create New Account
           </h1>
           <VTextField
             style="color: white"
@@ -46,27 +46,29 @@
                 cols="12"
                 class="justify-center"
               >
-                <VBtn
-                  class="ma-10"
-                  variant="flat"
-                  color="#8C54D0"
-                  rounded="lg"
-                  style="color: white;"
-                >
-                  Create
-                </VBtn>
+                <h3 style="font-size: 25px;">
+                  ※ Password has to be minimum 12 characters include 
+                  <br> 
+                  at least one UPPER case, Number, Symbol
+                </h3>
+                
+                <VCardActions class="justify-center">
+                  <VBtn
+                    class="ma-10"
+                    variant="flat"
+                    color="#8C54D0"
+                    rounded="lg"
+                    style="color: white;"
+                    to="/verify"
+                  >
+                    Next
+                  </VBtn>
+                </VCardActions>
               </VCol>
               <VCol
                 cols="12"
                 class="justify-center"
-              >
-                <h3 style="font-size: 40px;">
-                  ※ Please include at least one UPPER case and
-                </h3>
-                <h3 style="font-size: 40px;">
-                  one Number in your password
-                </h3>
-              </VCol>
+              />
             </VRow>
           </VCardActions>
         </div>
