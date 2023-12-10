@@ -18,10 +18,13 @@ import logo from '@/assets/logo/logoicon.png'
         md="6"
       >
         <div class="align-center">
+          <br>
+          <br>
+          <br>
           <h1
             class="mb-3"
             style="color: #FFBF36;
-            text-align: center; font-family: Bungee,serif;
+            text-align: center; font-family: Anton;
             font-size: 100px;
             font-style: normal;
             font-weight: 400 ;
@@ -30,6 +33,8 @@ import logo from '@/assets/logo/logoicon.png'
           >
             WELCOME!
           </h1>
+          <br>
+          <br>
           <VTextField
             style="color: white"
             bg-color="#8C54D0"
@@ -45,9 +50,10 @@ import logo from '@/assets/logo/logoicon.png'
             bg-color="#FFBF36"
             color="white"
             label="Password"
-          />
-
-          <br> 
+            type="password"
+          /> 
+          <br>
+          <br>
           <VCardActions class="justify-center">
             <VBtn
               onclick="location.href='/'"
@@ -94,6 +100,8 @@ import logo from '@/assets/logo/logoicon.png'
     </VRow>
   </VCol>
 </template>
+
+
 
 <route lang="yaml">
 meta:

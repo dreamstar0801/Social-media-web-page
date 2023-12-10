@@ -30,7 +30,7 @@ const isButtonActive = buttonName => {
           <h1
             class="mb-7"
             style="color: #FFBF36;
-            text-align: center; font-family: Bungee,serif;
+            text-align: center; font-family: Anton;
             font-size: 90px;
             font-style: normal;
             font-weight: 400;

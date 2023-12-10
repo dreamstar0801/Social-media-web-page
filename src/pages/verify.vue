@@ -1,6 +1,7 @@
 <template>
   <div style="background-color: black; height: 100vh">
     <div class="door">
+      <br><br>
       <img src="../assets/door.png">
     </div>
     <form>
@@ -10,13 +11,18 @@
           placeholder="ENTER YOUR SCHOOL EMAIL"
         >
       </div>
-      <div class="verifybutton">
-        <button
-          onclick="location.href='/account_recovery/email_sent'"
+      <VCardActions class="justify-center">
+        <VBtn
+          class="ma-10"
+          variant="flat"
+          color="#8C54D0"
+          rounded="lg"
+          style="color: white;"
+          to="/account_recovery/sign_up2"
         >
-          VERIFY
-        </button>
-      </div>
+          Verify
+        </VBtn>
+      </vcardactions>
     </form>
   </div>
 </template>

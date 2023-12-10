@@ -29,20 +29,20 @@ const click = () =>{
         md="6"
       >
         <div class="align-center">
+          <br><br><br>
           <h1
             class="mb-7"
             style="color: #FFBF36;
-            text-align: center; font-family: Bungee,serif;
+            text-align: center; font-family: Anton;
             font-size: 90px;
             font-style: normal;
             font-weight: 400;
             line-height: 100px;
             letter-spacing: 18px;"
           >
-            WHAT DID YOU<br>
-            FORGET?
+            WHAT DID YOU FORGET?
           </h1>
-
+          <br><br><br>
           <VBtn
             to="/account_recovery/recover_username"
             block=""

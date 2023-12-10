@@ -15,15 +15,15 @@
         <div class="align-center">
           <h1
             class="mb-3"
-            style="color: #FFBF36;
-            text-align: center; font-family: Anton;
-            font-size: 80px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 90px;
-            letter-spacing: 10px;"
+            style="color: #ffe9bb;
+              text-align: center; font-family: Anton;
+              font-size: 80px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 90px;
+              letter-spacing: 10px;"
           >
-            Create New Account
+            Reset your password
           </h1>
           <br>
           <br>
@@ -31,7 +31,7 @@
             style="color: white"
             bg-color="#8C54D0"
             color="white"
-            label="Username"
+            label="New password"
           />
           <VDivider
             color="#FFFFFFFF"
@@ -41,7 +41,7 @@
             style="color: white"
             bg-color="#FFBF36"
             color="white"
-            label="Password"
+            label="Confirm Password"
           />
           <VCardActions class="justify-center">
             <VRow>
@@ -63,9 +63,9 @@
                     color="#8C54D0"
                     rounded="lg"
                     style="color: white;"
-                    to="/verify"
+                    to="/login"
                   >
-                    Next
+                    Reset
                   </VBtn>
                 </VCardActions>
               </VCol>
@@ -80,45 +80,20 @@
     </VRow>
   </VCol>
 </template>
-
+  
 <script setup lang='ts'>
 </script>
-
-<style scoped>
-h1{
-  text-align: center;
-  color: #fbd990;
-  font-family: bungee;
-  letter-spacing: 0.1em;
-}
-
-h2{
-  text-align: center;
-  color: white;
-  font-family: bungee;
-  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
-  transform:translate(0,-100px);
-}
-
-h3{
-  text-align: center;
-  color: #ff7676;
-  font-family: cabin;
-}
-
-.idbox{
-  text-align: center;
-  transform:translate(0,-100px);
-}
-
-.verifybutton{
-  border-radius: 20px;
-  width: 170px;
-  height: 66px;
-}
-</style>
-
-<route lang="yaml">
-meta:
-  layout: blank
-</route>
+  
+  <style scoped>
+  h3{
+    text-align: center;
+    color: #ff7676;
+    font-family: cabin;
+  }
+  </style>
+  
+  <route lang="yaml">
+  meta:
+    layout: blank
+  </route>
+  

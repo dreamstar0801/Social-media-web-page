@@ -26,7 +26,7 @@
             Email Sent!
           </h1>
           <h3 style="text-align: center; color: white">
-            We send you a email to check your password. <br> Please check your email inbox or spam.
+            Please check your email inbox or spam.
           </h3>
           <br><br><br><br>
           <h2 style="text-align: center; color: white">

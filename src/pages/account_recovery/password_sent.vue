@@ -28,7 +28,7 @@
             We send you a email to check your password. Please check your email inbox or spam.
           </h3>
           <h2 style="text-align: center; color: white">
-            Still did’t get it? You can resend it (Max 3 times)
+            Still did’t get it? <br> You can resend it (Max 3 times)
           </h2>
           <VCardActions class="justify-center mt-7">
             <VBtn
