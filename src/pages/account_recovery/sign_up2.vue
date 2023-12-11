@@ -30,7 +30,7 @@
           </h3>
           <br><br><br><br>
           <h2 style="text-align: center; color: white">
-            Still didn’t get it? <br> You can resend it (Max 3 times)
+            Still didn’t get it? <br> You can resend it (Max {{count}} times)
           </h2>
           <br>
           <VTextField
@@ -55,6 +55,7 @@
               variant="flat"
               color="#8C54D0"
               rounded="lg"
+              @click="count=count-1"
             >
               Resend
             </VBtn>
@@ -66,6 +67,8 @@
 </template>
 
 <script setup>
+const count=ref(3)
+
 </script>
 
 <route lang="yaml">

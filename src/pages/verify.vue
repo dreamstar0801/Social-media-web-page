@@ -13,7 +13,7 @@
       </div>
       <VCardActions class="justify-center">
         <VBtn
-          width='100'
+          width="100"
           class="ma-10"
           variant="flat"
           color="#8C54D0"
@@ -27,6 +27,9 @@
     </form>
   </div>
 </template>
+
+<script setup>
+</script>
 
 <style scoped>
 input{
