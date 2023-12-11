@@ -28,6 +28,8 @@
           <br>
           <br>
           <VTextField
+            ref="usernameField"
+            :rules="[rules.require, rules.usernameRules]"
             style="color: white"
             bg-color="#8C54D0"
             color="white"
@@ -38,10 +40,15 @@
             class="ma-3"
           />
           <VTextField
+            ref="passwordField"
+            :type="isPasswordVisible ? 'text' : 'password'"
+            :append-inner-icon="isPasswordVisible ? 'mdi-eye-off-outline' : 'mdi-eye-outline'"
+            :rules="[rules.require, rules.passwordRules]"
             style="color: white"
             bg-color="#FFBF36"
             color="white"
             label="Password"
+            @click:append-inner="isPasswordVisible = !isPasswordVisible"
           />
           <VCardActions class="justify-center">
             <VRow>
@@ -58,8 +65,10 @@
                 <br>
                 <VCardActions class="justify-center">
                   <VBtn
+                    :disabled="!isFormValid"
                     class="ma-10"
                     variant="flat"
+                    width='100'
                     color="#8C54D0"
                     rounded="lg"
                     style="color: white;"
@@ -81,7 +90,24 @@
   </VCol>
 </template>
 
-<script setup lang='ts'>
+<script setup>
+import { ref, computed } from 'vue'
+
+const isPasswordVisible = ref(false)
+
+const usernameField = ref(null)
+const passwordField = ref(null)
+
+const rules = {
+  require: value => !!value || 'Field is required',
+}
+
+const isFormValid = computed(() => {
+  return (
+    usernameField.value?.isValid &&
+    passwordField.value?.isValid
+  )
+})
 </script>
 
 <style scoped>
