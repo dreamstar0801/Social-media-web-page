@@ -65,7 +65,6 @@
                 <br>
                 <VCardActions class="justify-center">
                   <VBtn
-                    :disabled="!isFormValid"
                     class="ma-10"
                     variant="flat"
                     width='100'
