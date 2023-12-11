@@ -40,46 +40,66 @@
               class="pt-14"
               cols="12"
             >
-              <VBtn
-                to="/register"
-                width="15vw"
-                height="5vw"
-                color="#FFBF36"
-                text-color="#fff"
-                rounded="XL"
-                class="sign-in"
-                style="
+              <br><br><br><br>
+              <div class="signup">
+                <VBtn
+                  to="/register"
+                  width="10vw"
+                  height="3vw"
+                  color="#FFBF36"
+                  text-color="#fff"
+                  rounded="XL"
+                  class="sign-in"
+                  style="
+                  letter-spacing: 4px;
+                  font-family: Anton;
                   line-height: 0;
-                  font-size: 2vw;
+                  font-size: 1.5vw;
                   color: #fff;
-                  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000,
-                    1px -1px 0 #000, 0px 1px 0 #000, 0-1px 0 #000, -1px 0 0 #000,
-                    1px 0 0 #000;
+                  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
                 "
-              >
-                SIGN-UP
-              </VBtn>
+                >
+                  SIGN-UP
+                </VBtn>
+              </div>
             </VCol>
             <VCol cols="12">
-              <VBtn
-                to="/login"
-                width="15vw"
-                height="5vw"
-                color="#8C54D0"
-                text-color="#fff"
-                rounded="XL"
-                class="sign-in"
-                style="
+              <div class="signup">
+                <VBtn
+                  to="/login"
+                  width="10vw"
+                  height="3vw"
+                  color="#8C54D0"
+                  text-color="#fff"
+                  rounded="XL"
+                  class="sign-in"
+                  style="
+                  letter-spacing: 4px;
+                  font-family: Anton;
                   line-height: 0;
-                  font-size: 2vw;
+                  font-size: 1.5vw;
                   color: #fff;
-                  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, -1px 1px 0 #000,
-                    1px -1px 0 #000, 0px 1px 0 #000, 0-1px 0 #000, -1px 0 0 #000,
-                    1px 0 0 #000;
+                  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
                 "
-              >
-                LOG-IN
-              </VBtn>
+                >
+                  LOG-IN
+                </VBtn>
+              </div>
+              <br><br>
+              <div class="signup">
+                <VBtn
+                  variant="text"
+                  color="#8C54D0"
+                  style="
+                    letter-spacing: 4px;
+                    font-family: Anton;
+                    color: white;
+                    font-size: 25px;"
+                  to="/account_recovery"
+                >
+                  Forgot your account?
+                </VBtn>
+              </div>
             </VCol>
           </VRow>
         </div>
@@ -117,6 +137,8 @@ import door from '@/assets/door.png'
   height: 90%;
   text-align: right;
   margin-left: auto;
+  position: relative;
+  left: 50px;
 }
 
 div.main-title {
@@ -174,6 +196,11 @@ body {
   float: right;
   width: 50%;
   text-align: left;
+}
+
+.signup{
+  position: relative;
+  right: 100px;
 }
 </style>
 
