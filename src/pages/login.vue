@@ -99,7 +99,11 @@ import logo from '@/assets/logo/logoicon.png'
       </VCol>
     </VRow>
   </VCol>
+
+  VBtn:hover:after
 </template>
+
+
 
 
 
