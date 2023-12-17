@@ -51,12 +51,13 @@
               Back to login
             </VBtn>            
             <VBtn
+              width="110"
               style="color: white"
               variant="flat"
               color="#8C54D0"
               rounded="lg"
-              @click="count=count-1"
-            >
+              @click="decrementCount"
+              >
               Resend
             </VBtn>
           </VCardActions>
@@ -67,8 +68,16 @@
 </template>
 
 <script setup>
-const count=ref(3)
+import { ref } from 'vue';
 
+const count=ref(3)
+const minCount = 0;
+
+const decrementCount = () => {
+  if (count.value > minCount) {
+    count.value -= 1;
+  }
+};
 </script>
 
 <route lang="yaml">
